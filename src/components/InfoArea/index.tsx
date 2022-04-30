@@ -1,6 +1,10 @@
 import * as C from './styles'
 
-export const InfoArea = () => {
+type Props = {
+  currentMonth: string;
+}
+
+export const InfoArea = ({currentMonth}: Props) => {
   return (
     <C.Container>
       <C.MonthArea>
